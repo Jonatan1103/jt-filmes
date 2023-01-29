@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./libs/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./images/movies.png" type="image/x-icon">
+  <title>JT - Filmes</title>
+</head>
+<body>
+
+  <header id="header-movie" class="p-3">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <h1 class="text-white">JT - Filmes</h1>
+  
+        <button type="button" class="navbar-toggler navbar-dark" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <nav class="collapse navbar-collapse justify-content-end" id="menu-nav">
+          <ul class="nav nav-pills navbar-nav">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#filmes-lancamentos" class="nav-link">Filmes lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Fale Conosco</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div data-bs-spy="scroll" data-bs-target="#header-movie">
+    <div id="inicio">
+      <div id="carousel-filme" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div data-bs-interval="3000" class="carousel-item active">
+            <picture>
+              <source srcset="./images/capa-mobile/avengers-mobile.jpg" media="(max-width:600px)">
+              <img class="d-block w-100" src="./images/avengers-end-game.jpg"
+                alt="">
+            </picture>
+            <div class="carousel-caption">
+              <h2>Vingadores - End game</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <picture>
+              <source srcset="./images/capa-mobile/duna-mobile.webp" media="(max-width:600px)">
+              <img class="d-block w-100" src="./images/duna.jpg" alt="">
+            </picture>
+            <div class="carousel-caption">
+              <h2>Duna</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <picture>
+              <source srcset="./images/capa-mobile/genio-mobile.jpg.crdownload" media="(max-width:600px)">
+              <img class="d-block w-100" src="./images/Genio-Indomavel.jpg"
+              alt="">
+            </picture>
+            <div class="carousel-caption">
+              <h2>Gênio Indomável</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <picture>
+              <source srcset="./images/capa-mobile/inter-mobile.jpg" media="(max-width:600px)">
+              <img class="d-block w-100" src="./images/interisterllar.jpg" alt="">
+            </picture>
+            <div class="carousel-caption">
+              <h2>Interisterllar</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <picture>
+              <source srcset="./images/capa-mobile/benjamin-mobile.jpg" media="(max-width:600px)">
+              <img class="d-block w-100" src="./images/o-curioso-caso-de-benjamin-button.webp" alt="">
+            </picture>
+            <div class="carousel-caption">
+              <h2>O Curioso caso de Benjamin button</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <picture>
+              <source srcset="./images/capa-mobile/lotr-mobile.webp" media="(max-width:600px)">
+              <img class="d-block w-100" src="./images/senhor-dos-aneis.jpg" alt="">
+            </picture>
+            <div class="carousel-caption">
+              <h2>O Senhor dos anéis</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <picture>
+              <source srcset="./images/capa-mobile/tdv-mobile.jpg" media="(max-width:600px)">
+              <img class="d-block w-100" src="./images/tumulo-de-vagalumes.webp" alt="">
+            </picture>
+            <div class="carousel-caption">
+              <h2>Tumulo de Vagalumes</h2>
+            </div>
+          </div>
+        </div>
+  
+        <button data-bs-target="#carousel-filme" data-bs-slide="prev" class="carousel-control-prev" type="button">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-filme" data-bs-slide="next" class="carousel-control-next" type="button">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+  
+        <footer class="carousel-indicators">
+          <button class="active" type="button" data-bs-target="#carousel-filme" data-bs-slide-to="0"></button>
+          <button type="button" data-bs-target="#carousel-filme" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel-filme" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carousel-filme" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#carousel-filme" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#carousel-filme" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#carousel-filme" data-bs-slide-to="6"></button>
+        </footer>
+      </div>
+    </div>
+
+    <section id="filmes-lancamentos" class="container">
+      <h2 class="pb-4">Lançamentos</h2>
+      <main class="row">
+        <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <header class="card-header text-white">
+              <h3>Creed 3</h3>
+            </header>
+            <main class="card-body d-flex justify-content-center align-content-center">
+              <img src="./images/capa-filmes/1172245.jpg" alt="">
+            </main>
+            <footer class="card-footer p-0">
+              <button class="btn p-3 w-100 text-white">Assistir</button>
+            </footer>
+          </div>
+        </div>
+
+        <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <header class="card-header text-white">
+              <h3>Creed 3</h3>
+            </header>
+            <main class="card-body d-flex justify-content-center align-content-center">
+              <img src="./images/capa-filmes/capa-filme-avatar-2-o-caminho-da-agua-d78b1-large.jpg" alt="">
+            </main>
+            <footer class="card-footer p-0">
+              <button class="btn p-3 w-100 text-white">Assistir</button>
+            </footer>
+          </div>
+        </div>
+
+        <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <header class="card-header text-white">
+              <h3>Creed 3</h3>
+            </header>
+            <main class="card-body d-flex justify-content-center align-content-center">
+              <img src="./images/capa-filmes/homem-aranha.jpg" alt="">
+            </main>
+            <footer class="card-footer p-0">
+              <button class="btn p-3 w-100 text-white">Assistir</button>
+            </footer>
+          </div>
+        </div>
+
+        <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <header class="card-header text-white">
+              <h3>Creed 3</h3>
+            </header>
+            <main class="card-body d-flex justify-content-center align-content-center">
+              <img src="./images/capa-filmes/homem-formiga.jpg" alt="">
+            </main>
+            <footer class="card-footer p-0">
+              <button class="btn p-3 w-100 text-white">Assistir</button>
+            </footer>
+          </div>
+        </div>
+
+        <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <header class="card-header text-white">
+              <h3>Creed 3</h3>
+            </header>
+            <main class="card-body d-flex justify-content-center align-content-center">
+              <img src="./images/capa-filmes/john-wick.jpg" alt="">
+            </main>
+            <footer class="card-footer p-0">
+              <button class="btn p-3 w-100 text-white">Assistir</button>
+            </footer>
+          </div>
+        </div>
+
+        <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <header class="card-header text-white">
+              <h3>Creed 3</h3>
+            </header>
+            <main class="card-body d-flex justify-content-center align-content-center">
+              <img src="./images/capa-filmes/nada-de-novo.jpg" alt="">
+            </main>
+            <footer class="card-footer p-0">
+              <button class="btn p-3 w-100 text-white">Assistir</button>
+            </footer>
+          </div>
+        </div>
+
+      </main>
+    </section>
+  
+    <section id="about" class="container">
+      <h2>Fale conosco</h2>
+
+      <form class="row">
+        <div class="form-group col-lg-8 rounded p-3">
+          <label for="email">Digite seu E-mail:</label>
+          <input type="email" class="form-control" id="email" placeholder="jtfilmes@example.com">
+          <label for="nome">Digite seu nome:</label>
+          <input type="text" class="form-control" id="nome" placeholder="jtfilmes de souza">
+          <label for="sugestao">Diga-nos sua sugestão</label>
+          <textarea class="form-control" id="sugestao" rows="8"></textarea>
+
+          <button type="submit" class="btn text-white mt-4">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      &copy;JT - Filmes 2023
+    </div>
+  </footer>
+
+  <script src="./libs/bootstrap.bundle.min.js"></script>
+</body>
+</html>
